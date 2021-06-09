@@ -24,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+// route crud
 Route::resource('/home', HomeController::class);
 Route::resource('/barangmasuk', BarangMasukController::class);
 Route::resource('/databarang', DataBarang::class);
